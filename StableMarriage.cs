@@ -29,7 +29,7 @@ namespace StableMarriage {
         }        
 
         static void Main(string[] args) {
-            Dictionary<int, Man> men = new Dictionary<int, Man> {
+            var men = new Dictionary<int, Man> {
                 { 0, new Man(0 , new List<int>{ 0 , 3 , 2 , 1 , 4 }) },
                 { 1, new Man(1 , new List<int>{ 0 , 3 , 2 , 4 , 1 }) },
                 { 2, new Man(2 , new List<int>{ 3 , 4 , 1 , 2 , 0 }) },
