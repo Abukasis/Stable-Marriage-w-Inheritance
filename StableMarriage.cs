@@ -13,12 +13,10 @@ namespace StableMarriage {
                     var w = women[m.getNextWomenToProposeTo()];
                     m.proposedTo.Add(w.id);
                     if (w.wouldSwitchFor(m.id)) {
-                        if (matches.ContainsKey(w.id))
-                            matches.Remove(w.id);
                         int oldMan = w.divorceAndMarry(m.id);
                         if (oldMan != -1) availMen.Add(oldMan);
                         availMen.Remove(m.id);
-                        matches.Add(w.id, new Match { man = m, women = w });
+                        matches[w.id] =  new Match { man = m, women = w };
                         manIsProposing = false;
                     }
                 }
