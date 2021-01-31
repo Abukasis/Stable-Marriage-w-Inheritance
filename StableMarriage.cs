@@ -115,11 +115,9 @@ namespace StableMarriage {
         }
 
         public override string ToString() {
-            var output = "";
-                output += $"Man:{man.id} Rank:{getRanking(isWoman: false)}, "
-                        + $"Women:{women.id} Rank:{getRanking(isWoman: true)}, "
-                        + $"Deal={bestDeal()}";
-            return output;
+            return $"Man:{man.id} Rank:{getRanking(isWoman: false)}, "
+                   + $"Women:{women.id} Rank:{getRanking(isWoman: true)}, "
+                   + $"Deal={bestDeal()}";
         }
     }
 }
