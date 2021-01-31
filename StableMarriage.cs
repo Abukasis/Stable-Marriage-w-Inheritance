@@ -21,9 +21,9 @@ namespace StableMarriage {
                     }
                 }
             }
-            int i = 0;
+            int i = 1;
             foreach (var k in matches.Keys)
-                Console.WriteLine($"Match #{++i} : {matches[k].ToString()} \n");
+                Console.WriteLine($"Match #{i++} : {matches[k].ToString()} \n");
         }        
 
         static void Main(string[] args) {
